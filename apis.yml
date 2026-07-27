@@ -1,8 +1,14 @@
 aid: forus
 name: Forus
-description: 'Forus is a company surfaced as a portfolio company of accel, general-catalyst, redpoint-ventures
-  and added to the API Evangelist network as a stub for enrichment. Sector: fintech. This profile is a
-  lead awaiting the enrichment pipeline.'
+description: 'Forus (formerly Tandem) is an AI-powered healthcare technology company
+  operating a network that connects physicians, pharmacies, payers, and biopharmaceutical
+  companies to accelerate patient access to prescribed medicines. Its platform automates
+  the administrative work between a clinical decision and treatment initiation: insurance
+  prior authorization, AI-generated denial appeals, financial-assistance enrollment,
+  benefit verification, and pharmacy fulfillment routing. Forus is embedded in physician
+  workflows across most U.S. zip codes and is SOC 2 Type II and HIPAA compliant. It
+  offers no public developer API, OpenAPI spec, or SDKs; this profile captures the
+  company''s public web, trust, and security surface.'
 url: https://raw.githubusercontent.com/api-evangelist/forus/refs/heads/main/apis.yml
 x-type: company
 x-source: vc-portfolio
@@ -12,12 +18,30 @@ x-backed-by:
 - redpoint-ventures
 x-tier: stub
 x-tier-reason: portfolio-lead
+accessModel:
+  pricing: unknown
+  onboarding: unknown
+  trial: false
+  try_now: false
+  public: false
+  label: Unknown
+  confidence: low
+  source: []
+  generated: '2026-07-22'
+  method: derived
 specificationVersion: '0.20'
 created: '2026-07-17'
-modified: '2026-07-17'
+modified: '2026-07-19'
+image: https://cdn.sanity.io/images/t4ez5tge/production/556e864feed2af4c4e4bcc871f82e58386a30ecb-1200x630.png
 tags:
 - Company
-- Fintech
+- Healthcare
+- Health IT
+- Prior Authorization
+- Patient Access
+- Pharmacy
+- Artificial Intelligence
+- Biopharma
 apis: []
 maintainers:
 - FN: Kin Lane
@@ -27,3 +51,34 @@ maintainers:
 common:
 - type: Website
   url: https://forus.com/
+- type: Blog
+  url: https://build.forus.com/
+- type: SignUp
+  url: https://provider.forus.com/signup
+- type: Login
+  url: https://provider.forus.com/login
+- type: PrivacyPolicy
+  url: https://forus.com/pp
+- type: TermsOfService
+  url: https://forus.com/tou
+- type: TrustCenter
+  url: security/forus-trust-center.yml
+- type: Compliance
+  url: https://security.forus.com/
+- type: Security
+  url: https://security.forus.com/
+- type: VulnerabilityDisclosure
+  url: security/forus-vulnerability-disclosure.yml
+- type: DomainSecurity
+  url: security/forus-domain-security.yml
+- type: LLMsTxt
+  url: llms/forus-llms.txt
+- type: LinkedIn
+  url: https://www.linkedin.com/company/forushq/
+- type: X
+  url: https://x.com/forus
+x-enrichment:
+  date: '2026-07-19'
+  status: backfilled
+  pass: local-v1
+  note: backfilled from .gitignore signal + verified work evidence
